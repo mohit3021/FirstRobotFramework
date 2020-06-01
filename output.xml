@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200601 17:44:42.045" rpa="false">
+<suite id="s1" name="TestSuite1" source="D:\eclipse-workspace\RobotProject1\test\TestSuite1.robot">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This will run only once before the Test Suite</arg>
+</arguments>
+<msg timestamp="20200601 17:44:42.457" level="INFO">This will run only once before the Test Suite</msg>
+<status status="PASS" starttime="20200601 17:44:42.457" endtime="20200601 17:44:42.458"></status>
+</kw>
+<test id="s1-t1" name="FirstSeleniumTest">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This will run befor each and every test case</arg>
+</arguments>
+<msg timestamp="20200601 17:44:42.459" level="INFO">This will run befor each and every test case</msg>
+<status status="PASS" starttime="20200601 17:44:42.459" endtime="20200601 17:44:42.459"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://google.com</arg>
+<arg>chrome</arg>
+<arg>executable_path=${driverpath}</arg>
+</arguments>
+<msg timestamp="20200601 17:44:42.461" level="INFO">Opening browser 'chrome' to base url 'https://google.com'.</msg>
+<status status="PASS" starttime="20200601 17:44:42.460" endtime="20200601 17:45:14.626"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20200601 17:45:14.628" endtime="20200601 17:45:14.631"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>Autpmation step by Step</arg>
+</arguments>
+<msg timestamp="20200601 17:45:14.633" level="INFO">Typing text 'Autpmation step by Step' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20200601 17:45:14.632" endtime="20200601 17:45:15.011"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200601 17:45:15.014" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg timestamp="20200601 17:45:15.333" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20200601 17:45:15.333" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20200601 17:45:15.013" endtime="20200601 17:45:17.692"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200601 17:45:19.695" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200601 17:45:17.693" endtime="20200601 17:45:19.696"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200601 17:45:19.698" endtime="20200601 17:45:22.056"></status>
+</kw>
+<kw name="Log" library="BuiltIn" type="teardown">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This will run after each and every test case</arg>
+</arguments>
+<msg timestamp="20200601 17:45:22.060" level="INFO">This will run after each and every test case</msg>
+<status status="PASS" starttime="20200601 17:45:22.059" endtime="20200601 17:45:22.060"></status>
+</kw>
+<tags>
+<tag>sanity</tag>
+<tag>smoke1</tag>
+</tags>
+<status status="PASS" starttime="20200601 17:44:42.458" endtime="20200601 17:45:22.062" critical="yes"></status>
+</test>
+<test id="s1-t2" name="SimpleLoginTest">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This will run befor each and every test case</arg>
+</arguments>
+<msg timestamp="20200601 17:45:22.074" level="INFO">This will run befor each and every test case</msg>
+<status status="PASS" starttime="20200601 17:45:22.073" endtime="20200601 17:45:22.075"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200601 17:45:22.079" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com'.</msg>
+<status status="PASS" starttime="20200601 17:45:22.078" endtime="20200601 17:45:34.945"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200601 17:45:34.946" endtime="20200601 17:45:36.107"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20200601 17:45:36.134" endtime="20200601 17:45:36.138"></status>
+</kw>
+<kw name="LoginKW">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>@{Credentials}[0]</arg>
+</arguments>
+<msg timestamp="20200601 17:45:36.140" level="WARN">Accessing variable items using '@{Credentials}[0]' syntax is deprecated. Use '${Credentials}[0]' instead.</msg>
+<msg timestamp="20200601 17:45:36.141" level="INFO">Typing text 'admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20200601 17:45:36.139" endtime="20200601 17:45:36.328"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>&amp;{LOGINDATA}[password]</arg>
+</arguments>
+<msg timestamp="20200601 17:45:36.329" level="WARN">Accessing variable items using '&amp;{LOGINDATA}[password]' syntax is deprecated. Use '${LOGINDATA}[password]' instead.</msg>
+<msg timestamp="20200601 17:45:36.330" level="INFO">Typing password into text field 'id=txtPassword'.</msg>
+<msg timestamp="20200601 17:45:36.399" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200601 17:45:36.494" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200601 17:45:36.328" endtime="20200601 17:45:36.494"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20200601 17:45:36.495" level="INFO">Clicking element 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20200601 17:45:36.495" endtime="20200601 17:45:44.080"></status>
+</kw>
+<status status="PASS" starttime="20200601 17:45:36.138" endtime="20200601 17:45:44.080"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//*[text()='Welcome Admin']</arg>
+</arguments>
+<msg timestamp="20200601 17:45:44.082" level="INFO">Clicking element 'xpath=.//*[text()='Welcome Admin']'.</msg>
+<status status="PASS" starttime="20200601 17:45:44.081" endtime="20200601 17:45:44.267"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200601 17:45:46.270" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200601 17:45:44.268" endtime="20200601 17:45:46.270"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//*[text()='Logout']</arg>
+</arguments>
+<msg timestamp="20200601 17:45:46.271" level="INFO">Clicking element 'xpath=.//*[text()='Logout']'.</msg>
+<status status="PASS" starttime="20200601 17:45:46.271" endtime="20200601 17:45:48.229"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200601 17:45:48.230" endtime="20200601 17:45:51.023"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This Test is executed by %{username} on %{os}</arg>
+</arguments>
+<msg timestamp="20200601 17:45:51.027" level="INFO">This Test is executed by Sourabh on Windows_NT</msg>
+<status status="PASS" starttime="20200601 17:45:51.026" endtime="20200601 17:45:51.028"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is for my build-in functionn ${TEST NAME}</arg>
+</arguments>
+<msg timestamp="20200601 17:45:51.031" level="INFO">This is for my build-in functionn SimpleLoginTest</msg>
+<status status="PASS" starttime="20200601 17:45:51.029" endtime="20200601 17:45:51.031"></status>
+</kw>
+<kw name="Log" library="BuiltIn" type="teardown">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This will run after each and every test case</arg>
+</arguments>
+<msg timestamp="20200601 17:45:51.034" level="INFO">This will run after each and every test case</msg>
+<status status="PASS" starttime="20200601 17:45:51.033" endtime="20200601 17:45:51.035"></status>
+</kw>
+<tags>
+<tag>sanity</tag>
+<tag>smoke2</tag>
+</tags>
+<status status="PASS" starttime="20200601 17:45:22.069" endtime="20200601 17:45:51.036" critical="yes"></status>
+</test>
+<kw name="Log" library="BuiltIn" type="teardown">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This will run only once after the Test Suite</arg>
+</arguments>
+<msg timestamp="20200601 17:45:51.046" level="INFO">This will run only once after the Test Suite</msg>
+<status status="PASS" starttime="20200601 17:45:51.045" endtime="20200601 17:45:51.046"></status>
+</kw>
+<status status="PASS" starttime="20200601 17:44:42.047" endtime="20200601 17:45:51.046"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0">sanity</stat>
+<stat pass="1" fail="0">smoke1</stat>
+<stat pass="1" fail="0">smoke2</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="TestSuite1">TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200601 17:45:36.140" level="WARN">Accessing variable items using '@{Credentials}[0]' syntax is deprecated. Use '${Credentials}[0]' instead.</msg>
+<msg timestamp="20200601 17:45:36.329" level="WARN">Accessing variable items using '&amp;{LOGINDATA}[password]' syntax is deprecated. Use '${LOGINDATA}[password]' instead.</msg>
+</errors>
+</robot>
